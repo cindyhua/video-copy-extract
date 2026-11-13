@@ -1,0 +1,31 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 本地登录态 / 凭证（视频号扫码 cookie 等，绝不入库）
+state/
+*cookie*
+*.env
+.env
+*.token
+
+# 回归样本与抓取产物（S1~S7 真实视频 + meta，体积大且不进仓库）
+*.mp4
+*.mp3
+*.m4a
+*.wav
+*.jpg
+*.jpeg
+*.png
+_frames/
+*_meta.json
+
+# 实测 / 回归文档：含 23 条真实视频链接、作者名与逐次实测数据
+# 公开仓库不分发，仅本机保留（本地文件不动，只是 git 不跟踪）
+references/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

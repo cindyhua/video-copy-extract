@@ -1,0 +1,20 @@
+# video-copy-extract 运行依赖（换机执行一次，不随 skill 自动安装）
+#
+#   "<python>" -m pip install -r requirements.txt
+#   "<python>" -m playwright install chromium-headless-shell
+#
+# <python> 用你实际运行 scripts/fetch.py 的那个解释器；
+# 报错信息里会把它替换成真实路径，可以直接复制。
+#
+# 说明：
+#  · yt-dlp          B站 / 小红书取源
+#  · numpy           帧间差异计算
+#  · imageio-ffmpeg  自带 ffmpeg，抽帧 + B站分离流合并
+#  · playwright      仅抖音 / 快手解析需要（还要额外装浏览器）
+#  · 不含 faster-whisper：本 skill 不用它做转写，别白装 145MB 模型
+#  · 另两个 skill（shipinhao-batch-save / competitor-teardown）是
+#    WorkBuddy 技能市场里的独立 skill，不在 pip 里，也不进本仓库
+yt-dlp
+numpy
+imageio-ffmpeg
+playwright
